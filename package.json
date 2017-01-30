@@ -1,5 +1,5 @@
 {
-  "name": "eslintrc",
+  "name": "eslint-config-mycs",
   "version": "1.0.0",
   "description": "Eslintr config to use over all mycs projects",
   "main": ".eslintrc.json",
@@ -8,23 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mycsHQ/eslintrc.git"
+    "url": "git+https://github.com/mycsHQ/eslint-config-mycs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mycsHQ/eslintrc/issues"
+    "url": "https://github.com/mycsHQ/eslint-config-mycs/issues"
   },
-  "homepage": "https://github.com/mycsHQ/eslintrc#readme",
+  "homepage": "https://github.com/mycsHQ/eslint-config-mycs#readme",
   "private": true,
   "keywords": [
-    "eslintr"
+    "eslintr", "eslint-config-mycs"
   ],
-  "devDependencies": {
+  "peerDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.12.2",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint": ">=3.12.2",
     "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^6.9.0",
     "gulp-eslint": "^3.0.1"
   }

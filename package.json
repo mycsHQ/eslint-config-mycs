@@ -1,0 +1,23 @@
+{
+  "name": "eslintrc",
+  "version": "1.0.0",
+  "description": "Eslintr config to use over all mycs projects",
+  "main": ".eslintrc.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mycsHQ/eslintrc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mycsHQ/eslintrc/issues"
+  },
+  "homepage": "https://github.com/mycsHQ/eslintrc#readme",
+  "private": true,
+  "keywords": [
+    "eslintr"
+  ]
+}

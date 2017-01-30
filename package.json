@@ -19,5 +19,13 @@
   "private": true,
   "keywords": [
     "eslintr"
-  ]
+  ],
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.12.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "gulp-eslint": "^3.0.1"
+  }
 }

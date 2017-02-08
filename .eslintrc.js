@@ -1,4 +1,4 @@
-{
+module.exports = {
   "extends": "airbnb-base",
   "parser": "babel-eslint",
   "parserOptions": {
@@ -43,9 +43,9 @@
     "import/no-named-as-default": 0,
     "no-const-assign": "error",
     "no-this-before-super": "error",
-    "no-undef": "warn",
+    "no-undef": "error",
     "no-unreachable": "warn",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "error",
     "constructor-super": "warn",
     "valid-typeof": "warn",
     "no-param-reassign": 0, // needed because we assign parameters to $scope,
@@ -86,12 +86,12 @@
 
     // JS DOC
     "require-jsdoc": ["error", {
-        "require": {
-            "FunctionDeclaration": true,
-            "MethodDefinition": true,
-            "ClassDeclaration": true,
-            "ArrowFunctionExpression": false
-        }
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": false
+      }
     }],
     "valid-jsdoc": ["warn", {
       "requireReturnType": false,
@@ -197,4 +197,4 @@
     "browser": false,
     "by": false
   }
-}
+};

@@ -1,15 +1,16 @@
 {
   "name": "eslint-config-mycs",
-  "version": "1.1.0",
+  "version": "0.0.0-development",
   "license": "MIT",
   "description": "Eslint config to use over all mycs projects",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mycsHQ/eslint-config-mycs.git"
+    "url": "https://github.com/mycsHQ/eslint-config-mycs.git"
   },
   "author": "mycs GmbH",
   "bugs": {
@@ -17,13 +18,16 @@
   },
   "homepage": "https://github.com/mycsHQ/eslint-config-mycs#readme",
   "keywords": [
-    "eslint", "eslint-config-mycs", "eslintconfig"
+    "eslint",
+    "eslint-config-mycs",
+    "eslintconfig"
   ],
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": ">=3.12.2",
     "eslint-config-airbnb-base": "^11.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.9.0"
+    "eslint-plugin-react": "^6.9.0",
+    "semantic-release": "^6.3.2"
   }
 }

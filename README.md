@@ -1,5 +1,8 @@
 # eslint-config-mycs
 
+[![Build Status](https://travis-ci.org/mycsHQ/eslint-config-mycs.svg?branch=master)](https://travis-ci.org/mycsHQ/eslint-config-mycs)
+[![Code Style](https://img.shields.io/badge/code%20style-eslint--mycs-brightgreen.svg)](https://github.com/mycsHQ/eslint-config-mycs)
+
 These are the basic eslint rules used over the mycs repositories.
 
 ## To install

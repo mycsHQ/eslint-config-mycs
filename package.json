@@ -1,31 +1,33 @@
 {
   "name": "eslint-config-mycs",
-  "version": "1.0.0",
-  "description": "Eslintr config to use over all mycs projects",
-  "main": ".eslintrc.json",
+  "version": "0.0.0-development",
+  "license": "MIT",
+  "description": "Eslint config to use over all mycs projects",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mycsHQ/eslint-config-mycs.git"
+    "url": "https://github.com/mycsHQ/eslint-config-mycs.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "mycs GmbH",
   "bugs": {
     "url": "https://github.com/mycsHQ/eslint-config-mycs/issues"
   },
   "homepage": "https://github.com/mycsHQ/eslint-config-mycs#readme",
-  "private": true,
   "keywords": [
-    "eslintr", "eslint-config-mycs"
+    "eslint",
+    "eslint-config-mycs",
+    "eslintconfig"
   ],
-  "peerDependencies": {
+  "devDependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": ">=3.12.2",
     "eslint-config-airbnb-base": "^11.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^6.9.0",
-    "gulp-eslint": "^3.0.1"
+    "semantic-release": "^6.3.2"
   }
 }

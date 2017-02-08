@@ -1,4 +1,4 @@
-{
+module.exports = {
   "extends": "airbnb-base",
   "parser": "babel-eslint",
   "parserOptions": {
@@ -14,7 +14,9 @@
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest": true,
+    "jasmine": true
   },
 
   "plugins": [
@@ -43,9 +45,9 @@
     "import/no-named-as-default": 0,
     "no-const-assign": "error",
     "no-this-before-super": "error",
-    "no-undef": "warn",
+    "no-undef": "error",
     "no-unreachable": "warn",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "error",
     "constructor-super": "warn",
     "valid-typeof": "warn",
     "no-param-reassign": 0, // needed because we assign parameters to $scope,
@@ -86,12 +88,12 @@
 
     // JS DOC
     "require-jsdoc": ["error", {
-        "require": {
-            "FunctionDeclaration": true,
-            "MethodDefinition": true,
-            "ClassDeclaration": true,
-            "ArrowFunctionExpression": false
-        }
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": false
+      }
     }],
     "valid-jsdoc": ["warn", {
       "requireReturnType": false,
@@ -149,52 +151,43 @@
   },
 
   "globals": {
-    "__guard__": false,
-    "$": false,
-    "mandatory": false,
-    "jest": false,
-    "noop": false,
-    "mycs": false,
-    "_": false,
-    "j$": false,
-    "io": false,
-    "angular": false,
-    "jsSHA": false,
-    "Rx": false,
-    "Config": false,
-    "Filter": false,
-    "Run": false,
-    "ga": false,
-    "google": false,
-    "cxApi": false,
-    "FC": false,
-    "LC_API": false,
-    "Bugsnag": false,
-    "MobileDetect": false,
-    "contentful": false,
+    /** React */
     "React": false,
-    "sha256": false,
+    "Rx": false,
 
+    /** Angular, to remove when migration done */
+    "angular": false,
+    "j$": false,
+    "mycs": false,
+    "Config": false,
+    "Run": false,
     "Controller": false,
     "Directive": false,
     "Factory": false,
     "Service": false,
+    "Filter": false,
     "inject": false,
-
-    "jasmine": false,
-    "describe": false,
-    "it": false,
-    "expect": false,
-    "xit": false,
-    "xdescribe": false,
-    "afterEach": false,
-    "beforeEach": false,
-    "beforeAll": false,
-    "spyOn": false,
-    "fail": false,
-
     "protractor": false,
     "browser": false,
-    "by": false
+    "by": false,
+
+    /** Various */
+    "$": false, // Jquery
+    "__guard__": false, // Rest from decaffeinate
+    "mandatory": false, // TODO remove
+    "noop": false, // TODO remove
+    "_": false, // TODO remove (lodash)
+    "io": false, // socket.io
+    "jsSHA": false,
+    "ga": false, // TODO remove (install as npm package)
+    "google": false, // TODO remove (install as npm package)
+    "cxApi": false,
+    "FC": false,
+    "LC_API": false,
+    "Bugsnag": false, // TODO remove (install as npm package)
+    "MobileDetect": false, // TODO remove (install as npm package)
+    "contentful": false, // TODO remove (install as npm package)
+    "sha256": false, // TODO remove
+
   }
-}
+};

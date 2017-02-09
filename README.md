@@ -25,7 +25,7 @@ This package provides [mycs](https://mycs.com)'s eslint rules as an extensible s
 module.exports = {
   "extends": "mycs",
   "rules": {
-    "require-jsdoc": warn
+    "require-jsdoc": "warn"
   }
 }
 ```

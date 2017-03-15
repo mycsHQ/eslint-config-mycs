@@ -172,6 +172,7 @@ module.exports = {
     "by": false,
 
     /** Various */
+    "BABYLON": false,
     "$": false, // Jquery
     "__guard__": false, // Rest from decaffeinate
     "mandatory": false, // TODO remove

@@ -32,10 +32,10 @@ module.exports = {
       "asyncArrow": "ignore"
     }],
     "arrow-body-style": 0,
-    "array-bracket-spacing": ["warn", "always"],
+    "array-bracket-spacing": ["error", "always"],
     "space-before-blocks": ["error", "always"],
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],
-    "object-curly-spacing": ["warn", "always"],
+    "object-curly-spacing": ["error", "always"],
     "one-var-declaration-per-line": 0,
     "one-var": 0,
     "no-unused-expressions": 0,
@@ -95,7 +95,7 @@ module.exports = {
         "ArrowFunctionExpression": false
       }
     }],
-    "valid-jsdoc": ["warn", {
+    "valid-jsdoc": ["error", {
       "requireReturnType": false,
       "requireParamDescription": false,
       "requireReturn": false,
@@ -189,6 +189,5 @@ module.exports = {
     "MobileDetect": false, // TODO remove (install as npm package)
     "contentful": false, // TODO remove (install as npm package)
     "sha256": false, // TODO remove
-
   }
 };

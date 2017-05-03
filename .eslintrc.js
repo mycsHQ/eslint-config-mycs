@@ -28,10 +28,10 @@ module.exports = {
       "asyncArrow": "ignore"
     }],
     "arrow-body-style": 0,
-    "array-bracket-spacing": ["warn", "always"],
+    "array-bracket-spacing": ["error", "always"],
     "space-before-blocks": ["error", "always"],
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],
-    "object-curly-spacing": ["warn", "always"],
+    "object-curly-spacing": ["error", "always"],
     "one-var-declaration-per-line": 0,
     "one-var": 0,
     "no-unused-expressions": 0,

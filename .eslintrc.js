@@ -19,10 +19,6 @@ module.exports = {
     "jasmine": true
   },
 
-  "plugins": [
-    "react"
-  ],
-
   "rules": {
     "comma-dangle": 0,
     "indent": ["error", 2, { "SwitchCase": 2 }],
@@ -72,122 +68,7 @@ module.exports = {
     "no-nested-ternary": 0,
     "default-case": 0, // didnt want to touch existing logic, @TODO enable it
     "prefer-spread": 0,
-    "template-curly-spacing": [2, "always"],
+    "template-curly-spacing": [2, "always"]
 
-    /* Rules needed to be disabled because of mycshash */
-    "global-require": 0,
-    "import/no-extraneous-dependencies": 0,
-    "import/no-unresolved": 0,
-    "class-methods-use-this": 0,
-    /* @TODO enable and fix this linting errors */
-    "no-var": 0,
-    "vars-on-top": 0,
-    "block-scoped-var": 0,
-    "no-sequences": 0,
-    "no-extend-native": 0,
-
-    // JS DOC
-    "require-jsdoc": ["error", {
-      "require": {
-        "FunctionDeclaration": true,
-        "MethodDefinition": true,
-        "ClassDeclaration": true,
-        "ArrowFunctionExpression": false
-      }
-    }],
-    "valid-jsdoc": ["error", {
-      "requireReturnType": false,
-      "requireParamDescription": false,
-      "requireReturn": false,
-      "requireReturnDescription": false
-    }],
-
-    // REACT RULES
-    "jsx-quotes": [2, "prefer-double"],
-    "react/jsx-boolean-value": 2,
-    "react/jsx-curly-spacing": [2, "always"],
-    "react/jsx-equals-spacing": [2, "never"],
-    "react/jsx-indent": [2, 2],
-    "react/jsx-indent-props": [2, 2],
-    "react/jsx-no-duplicate-props": 2,
-    "react/jsx-no-undef": 2,
-    "react/jsx-space-before-closing": 2,
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/self-closing-comp": 2,
-    "react/jsx-no-bind": [2, {
-      "allowArrowFunctions": true,
-      "allowBind": false,
-      "ignoreRefs": true
-    }],
-    "react/no-did-update-set-state": 2,
-    "react/no-did-mount-set-state": 2,
-    "react/no-direct-mutation-state": 2,
-    "react/prefer-es6-class": [2, "always"],
-    "react/no-unknown-property": 2,
-    "react/prop-types": 2,
-    "react/react-in-jsx-scope": 2,
-    "react/sort-comp": [2, {
-      "order": [
-        "static-methods",
-        "everything-else",
-        "lifecycle",
-        "render"
-      ],
-      "groups": {
-        "lifecycle": [
-          "getDefaultProps",
-          "getInitialState",
-          "componentWillMount",
-          "componentDidMount",
-          "componentWillReceiveProps",
-          "shouldComponentUpdate",
-          "componentWillUpdate",
-          "componentDidUpdate",
-          "componentWillUnmount"
-        ]
-      }
-    }]
-  },
-
-  "globals": {
-    /** React */
-    "React": false,
-    "Rx": false,
-
-    /** Angular, to remove when migration done */
-    "angular": false,
-    "j$": false,
-    "mycs": false,
-    "Config": false,
-    "Run": false,
-    "Controller": false,
-    "Directive": false,
-    "Factory": false,
-    "Service": false,
-    "Filter": false,
-    "inject": false,
-    "protractor": false,
-    "browser": false,
-    "by": false,
-
-    /** Various */
-    "BABYLON": false,
-    "$": false, // Jquery
-    "__guard__": false, // Rest from decaffeinate
-    "mandatory": false, // TODO remove
-    "noop": false, // TODO remove
-    "_": false, // TODO remove (lodash)
-    "io": false, // socket.io
-    "jsSHA": false,
-    "ga": false, // TODO remove (install as npm package)
-    "google": false, // TODO remove (install as npm package)
-    "cxApi": false,
-    "FC": false,
-    "LC_API": false,
-    "Bugsnag": false, // TODO remove (install as npm package)
-    "MobileDetect": false, // TODO remove (install as npm package)
-    "contentful": false, // TODO remove (install as npm package)
-    "sha256": false, // TODO remove
   }
 };
